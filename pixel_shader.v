@@ -44,32 +44,6 @@ always @ (*)
 
 endmodule
 
-// module get_rand_norm()
-
-// module intersect_circle(
-// 	input [31:0] cord_x,
-// 	input [31:0] cord_y,
-// 	input [31:0] circle_x,
-// 	input [31:0] circle_y,
-// 	input [31:0] radius_pixels,
-// 	output reg hits
-// );
-
-// reg [31:0] intercalc_x;
-// reg [31:0] intercalc_y;
-
-// always @ (*)
-// begin
-// 	intercalc_x = (cord_x - circle_x);
-// 	intercalc_y = (cord_y - circle_y);
-
-// 	hits = (intercalc_x * intercalc_x + intercalc_y * intercalc_y) < (radius_pixels * radius_pixels);
-// end
-
-// endmodule
-
-// 
-
 module intersect_circle(
 	input signed [31:0] x_cord_1616,
 	input signed [31:0] y_cord_1616,
@@ -196,29 +170,6 @@ intersect_circle circ4(
 	hits[3]
 );
 
-// wire [31:0] x_norm_abs1616; 
-// wire [31:0] y_norm_abs1616;
-// mul_1616 x_normabser(x_norm_1616, x_norm_1616, x_norm_abs1616);
-// mul_1616 y_normabser(y_norm_1616, y_norm_1616, y_norm_abs1616);
-
-// wire [31:0] intercalc_xabs;
-// wire [31:0] intercalc_yabs;
-// abs_1616 xabser(intercalc_x, intercalc_xabs);
-// abs_1616 yabser(intercalc_y, intercalc_yabs);
-
-// reg [31:0]  pre_sqrt;
-// reg         sqrt_start;
-// wire        sqrt_done;
-// wire [31:0] post_sqrt;
-
-// sqrt rooter(
-// 	.clk (clk),
-// 	.start (sqrt_start),
-// 	.valid (sqrt_done),
-// 	.rad (pre_sqrt),
-// 	.root (post_sqrt)
-// );
-
 reg       is_valid;
 reg [7:0] out_r;
 reg [7:0] out_g;
@@ -234,11 +185,7 @@ always @ (*)
 	case (S)
 	START: NS = SQRT_START;
 	SQRT_START: NS = SQRT_WAIT;
-	SQRT_WAIT:  
-//		if (sqrt_done)
-			NS = DONE;
-		// else
-		// 	NS = SQRT_WAIT;
+	SQRT_WAIT:  NS = DONE;
 	DONE:  NS = DONE;
 	endcase
 
@@ -316,24 +263,3 @@ always @ (posedge clk or negedge start)
 
 
 endmodule
-
-
-// get sqrt function working
-// get division working   -----> X
-// get rays
-// normalize rays
-// intersect???
-		// 	is_valid <= 1;
-		// 	pre_sqrt <= (x_offset_square + y_offset_square);
-		// 	// out_r <= ((x_norm_abs_1616 * x_norm_abs_1616 + y_norm_abs_1616 * y_norm_abs_1616) 
-		// 	// 		< 64'b0000_0000_0000_0000_0000_0000_0000_0000__0100_0000_0000_0000_0000_0000_0000_0000 ? 8'd255 : 8'b0);
-		// 	out_g <= (x_norm_abs2_1616 * 255) >> 16;
-		// 	out_b <= (y_norm_abs2_1616 * 255) >> 16;
-
-		// 	sqrter_start <= 0;
-		// end
-
-		// WORK2: begin
-		// 	out_r <= (post_sqrt < 32'b0000_0000_0000_0000__0100_0000_0000_0000) ? 8'd255 : 8'b0;
-		// 	out_g <= (post_sqrt * 128) >> 16;
-		// end
