@@ -1,0 +1,172 @@
+
+State Machine - |vga_driver_memory_2|S
+Name S.RFM_DRAWING S.RFM_INIT S.W2M_INC S.W2M_COND S.W2M_INIT S.START S.ERROR 
+S.START 0 0 0 0 0 0 0 
+S.W2M_INIT 0 0 0 0 1 1 0 
+S.W2M_COND 0 0 0 1 0 1 0 
+S.W2M_INC 0 0 1 0 0 1 0 
+S.RFM_INIT 0 1 0 0 0 1 0 
+S.RFM_DRAWING 1 0 0 0 0 1 0 
+S.ERROR 0 0 0 0 0 1 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db19|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db18|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db17|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db16|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db15|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db14|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db13|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db12|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db11|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db10|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db7|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db6|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db5|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db4|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db3|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db2|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db1|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 
+
+State Machine - |vga_driver_memory_2|debounce_switches:db|debounce:db0|S
+Name S.ERROR S.MAYBE_ZERO S.ZERO S.MAYBE_ONE S.ONE S.START 
+S.START 0 0 0 0 0 0 
+S.ONE 0 0 0 0 1 1 
+S.MAYBE_ONE 0 0 0 1 0 1 
+S.ZERO 0 0 1 0 0 1 
+S.MAYBE_ZERO 0 1 0 0 0 1 
+S.ERROR 1 0 0 0 0 1 

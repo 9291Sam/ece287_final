@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 14 12:42:24 2023
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : vga_driver_memory_double_buf
+Top-level Entity Name : vga_driver_memory_double_buf
+Family : Cyclone IV E
+Total logic elements : 6,087
+    Total combinational functions : 4,258
+    Dedicated logic registers : 2,886
+Total registers : 2886
+Total pins : 444
+Total virtual pins : 0
+Total memory bits : 2,801,664
+Embedded Multiplier 9-bit elements : 72
+Total PLLs : 0

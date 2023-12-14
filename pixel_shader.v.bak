@@ -1,0 +1,22 @@
+module pixel_shader(
+	input clk,
+	// 1 drawing | 0 reset
+	input start,
+	input [9:0] x,
+	input [9:0] y,
+	output reg [23:0] outRGB
+	outpur reg done);
+	
+always @ (*)
+begin
+	if (sart)
+	begin
+		outRGB = {8'b0, x[7:0], y[7:0]};
+		done = 1;
+	end else begin
+		outRGB = {24'hFFFFFF};
+		done = 0;
+	end
+end
+
+endmodule
